@@ -1,0 +1,55 @@
+% For (excessive) usage in your document.
+\newcommand{\docplace}{Magdeburg}
+\newcommand{\docuniversity}{Otto-von-Guericke-Universit\"at Magdeburg} % Otto-von-Guericke-University Magdeburg.
+\newcommand{\docuni}{OvGU}
+\newcommand{\docfaculty}{} % Faculty of Computer Science.
+\newcommand{\docfac}{OVGU}	% Important(!!!) for choosing the logo and colortheme. Available are:
+% EIT GSE INF MATH MB MED NAT OVGU VST WW
+\newcommand{\docinstitute}{} % Department for Technical & Operational Information Systems.
+\newcommand{\docinst}{}
+\newcommand{\docgroup}{} % Data and Knowledge Engineering Goup.
+\newcommand{\docgr}{}
+\newcommand{\docauthor}{}
+\newcommand{\docauthoremail}{}
+\newcommand{\doctitle}{Stuff} % My awesome title.
+\newcommand{\doctitleshort}{} % Short title.
+\newcommand{\docsubtitle}{}
+\newcommand{\docsubject}{}
+\newcommand{\docplainkeywords}{} % For use in text.
+\newcommand{\dockeywords}{ } % Tagify metadata -> use package hyperref.
+\newcommand{\docdate}{}
+
+\input{../ovgu_template/header}
+\input{../ovgu_template/titlepage}
+\input{../ovgu_template/headingsandfooter}
+
+\input{../ovgu_template/templateExtension}
+
+
+\AtBeginSection[]{
+	\begin{frame}
+	\vfill
+	\centering
+	\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+		\usebeamerfont{title}\insertsectionhead\par%
+	\end{beamercolorbox}
+	\vfill
+\end{frame}
+}
+
+\begin{document}
+	
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+	\section{Stuff}
+	
+	\begin{frame}
+		\frametitle{Stuff about Stuff}
+		\begin{itemize}
+			\item Stuff!
+		\end{itemize}
+	\end{frame}
+
+\end{document}

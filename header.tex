@@ -1,0 +1,87 @@
+\documentclass[nosymbols]{beamer} % Better in main.tex/Presentation.tex.
+%
+\usepackage[ngerman]{babel}		% German headings.
+\usepackage[T1]{fontenc}			% German typesetting.
+\usepackage[utf8]{inputenc} 		% Universal/Linux Kodierung
+%\usepackage[ansi]{inputenc} 		% Windows Kodierung
+%\usepackage[applemac]{inputenc}	% MacOS Kodierung
+%\usepackage[latin1]{inputenc} 		% Standart & Windows Kodierung
+%
+\usepackage{lmodern}				% Better font encoding.
+%\usepackage{verbatim} 				% Multiline Comments.
+\usepackage{amsmath, amsfonts, amssymb, amsxtra} % Mathematical symbols.
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{subfigure}
+%
+\usepackage{ifthen} 				% Fallunterscheidungen ermöglichen
+\usepackage{url}					% Links ermoeglichen
+\usepackage{listings}				% Für Quelltexte
+
+\usepackage{wrapfig}				% Für bunte Bildchens
+\usepackage{colortbl}
+\usepackage{graphicx}				% Einfacher für bilder \includegraphics{image.endung}
+\usepackage{enumerate}
+\newcommand{\labelitemii}{-}
+%
+\usepackage{color}
+\usepackage{xcolor}
+\definecolor{EIT}{rgb}{0.498039,0.8,0.188235}
+\definecolor{GSE}{rgb}{0.952941,0.439216,0.0784314}
+\definecolor{INF}{rgb}{0.00392157,0.407843,0.709804}
+\definecolor{MATH}{rgb}{0.819608,0.188235,0.34902}
+\definecolor{MB}{rgb}{0,0.670588,0.933333}
+\definecolor{MED}{rgb}{0.0627451,0.180392,0.341176}
+\definecolor{NAT}{rgb}{0.2,0.709804,0.247059}
+\definecolor{OVGU}{rgb}{0.454902,0,0.219608}
+\definecolor{VST}{rgb}{0.54902,0.0901961,0.560784}
+\definecolor{WW}{rgb}{0.341176,0.521569,0.611765}
+\usecolortheme[named=\docfac]{structure}
+%
+\beamertemplatenavigationsymbolsempty	% Slices without navigation symbols.
+
+%\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+\urlstyle{tt}
+\definecolor{grau}{rgb}{0.89,0.89,0.89}
+\definecolor{hellgelb}{rgb}{1.0,1.0,0.50}
+
+\lstset{
+	language=Java,
+	extendedchars=\true,
+	inputencoding=utf8,
+	basicstyle=\ttfamily,
+	numbers=left,
+	numberstyle=\tiny, 
+	numbersep=5pt,
+	tabsize=2,
+	framexleftmargin=10pt,
+	basicstyle=\small,
+	showstringspaces=false,
+	frame=single,
+	basicstyle=\ttfamily\fontsize{10}{12}\selectfont,
+	breaklines=true
+}
+\lstdefinelanguage{Pseudo}{
+	keywords={if, then, else, endif, switch, default, break, continue, case, for, endfor, while, do, endwhile, repeat, until, to},
+	comment=[l]{}
+}
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\lstset{language=Java,
+%	basicstyle=\ttfamily,
+	keywordstyle=\color{javapurple}\bfseries,
+	stringstyle=\color{javared},
+	commentstyle=\color{javagreen},
+	morecomment=[s][\color{javadocblue}]{/**}{*/},
+%	numbers=left,
+%	numberstyle=\tiny\color{black},
+%	stepnumber=2,
+%	numbersep=10pt,
+%	tabsize=4,
+%	showspaces=false,
+%	showstringspaces=false
+}

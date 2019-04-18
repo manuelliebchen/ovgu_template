@@ -1,0 +1,50 @@
+% by gerschmi (herb)
+% extensions for ovgu template
+
+
+\newcommand{\sectiontitle}[1][\doctitle]
+{
+	\title{#1} 
+
+	\setbeamertemplate{headline} %code from ovgu_template/headingsandfooter changed by gerschmi
+	{
+		\hspace*{0.02\textwidth}
+		\begin{minipage}[m]{0.3\textwidth}
+			\vspace*{3ex}
+			\includegraphics[height=8mm]{../ovgu_template/logos/\docfac /university_token}
+		\end{minipage}
+		\begin{minipage}[m]{0.45\textwidth}
+			\vspace*{3ex}
+			\normalsize #1 %  changed by gerschmi  original \doctitle ~- \docsubtitle
+		\end{minipage}
+		\hfill
+		\begin{minipage}[m]{0.16\textwidth} %changed by gerschmi from 0.14 to 0.16
+			\vspace*{3ex}
+			| Folie: \hfill \insertframenumber ~ / \inserttotalframenumber
+			\hspace*{0.1\textwidth}
+		\end{minipage}
+		\color{\docfac }
+		\rule{\paperwidth}{1pt}
+	}
+	
+}
+\newcommand{\sectionauthor}[1][\docauthor]
+{
+	
+	\author{#1}
+	
+	\setbeamertemplate{footline} % code from ovgu_template/include/headingsandfooter changed by gerschmi
+	{
+		\color{\docfac }
+		\rule{\paperwidth}{1pt}
+		\color{black}
+		\begin{minipage}[c]{\textwidth}
+			\vspace*{1ex}
+			\hspace*{0.02\textwidth} #1 \hfill \docdate \hspace{0.02\textwidth}
+			\vspace*{2ex}
+		\end{minipage}
+	}
+}
+
+
+
